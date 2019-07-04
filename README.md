@@ -43,7 +43,7 @@ app.use(decRouter.router.allowedMethods())
 
 controllers/api.js
 ```js
-import { controller, get, post } from 'dec-router'
+import { controller, get, post } from 'koa-dec-router'
 
 async function apiHandler(ctx, next) {
   console.log('handle all api and subclass\'s')
@@ -64,7 +64,7 @@ controllers/posts.js
 
 ```js
 
-import { controller, get, post } from 'dec-router'
+import { controller, get, post } from 'koa-dec-router'
 import Api from './api'
 
 async function postHandler(ctx, next) {
